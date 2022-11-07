@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Euclid Triangle';
+    src: local('Euclid Triangle Regular'), local('Euclid-Triangle-Regular'),
+        url('EuclidTriangle-Regular.woff2') format('woff2'),
+        url('EuclidTriangle-Regular.woff') format('woff'),
+        url('EuclidTriangle-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
