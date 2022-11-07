@@ -72,3 +72,74 @@
         padding-left: 10px;
     }
 }
+
+.header-content{
+    padding-top: 140px;
+    background: url('../images/header-bg.png') no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center 30%;
+    &__title{
+        font-weight: 700;
+        font-size: 108px;
+        line-height: 118px;
+        letter-spacing: 0.06em;
+        text-align: right;
+    }
+    &__title:nth-child(2){
+        padding-right: 111px;
+    }
+    &__inner{
+        display: flex;
+    }
+    &__card{
+        padding: 32px;
+        border: 2px solid #FFFFFF;
+        border-radius: 20px;
+        max-width: 417px;
+        height: 182px;
+        margin: 19px 0 0 15px;
+        &-title{
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: #FFC266;
+        }
+        &-text{
+            font-size: 24px;
+            line-height: 30px;
+        }
+    }
+    &__button{
+        color: $primary-color-text;
+        width: 225px;
+        height: 58px;
+        font-size: 24px;
+        line-height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(94.17deg, #E8C24F -53.08%, #DD475E 118.19%), radial-gradient(105.03% 92.27% at 97.99% 8.62%, #EB5323 0%, #811C5E 80.59%, #300947 100%);
+        box-shadow: inset -3px -3px 17px rgba(0, 0, 0, 0.25), inset 8px 2px 11px rgba(255, 255, 255, 0.16), inset -14.5651px 0px 18.2064px rgba(245, 178, 60, 0.2), inset 3px -3px 17px rgba(193, 62, 54, 0.45);
+        border-radius: 20px;
+        margin: 38px 0 0 380px;
+        margin-bottom: 100px;
+        transition: 3s;
+    }
+    &__button:hover{
+        background: linear-gradient(94.17deg, #e4dbc1 -53.08%, #DD475E 118.19%), radial-gradient(100.03% 92.27% at 97.99% 8.62%, #bd3005 0%, #cc4ea0 80.59%, #300947 100%);
+    }
+    &__info{
+        display: flex;
+        align-items: center;
+        &-text{
+            font-size: 28px;
+            line-height: 36px;
+            padding-left: 24px;
+            max-width: 530px;
+        }
+    }
+}
