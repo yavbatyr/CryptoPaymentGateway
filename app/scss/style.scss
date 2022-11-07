@@ -2,3 +2,73 @@
 @import 'fonts';
 @import 'global';
 
+.header{
+    margin-top: 40px;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        &-list{
+            display: flex;
+            justify-content: space-between;
+            padding-right: 60px;
+        }
+        &-item{
+            line-height: 18px;
+            padding-right: 20px;
+        }
+        &-item:last-child{
+            padding-right: 0px;
+        }
+        &-link{
+            color: $primary-color-text-header-1;
+            transition: .3s;
+            white-space: nowrap;
+        }
+        &-link:hover{
+            color: $primary-color-text-header-2;
+        }
+        &-button{
+            width: 75px;
+            height: 35px;
+            background: rgba(126, 128, 136, 0.2);
+            border-radius: 10px;
+            color: #ADAFB9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            transition: .3s;
+        }
+        &-button:hover{
+            background: linear-gradient(0deg, #FFC266, #FFC266), #FFFFFF;
+            color: #000;
+        }
+        &-language{
+            color: $primary-color-text-header-3;
+            text-decoration: underline;
+            transition: .3s;
+        }
+        &-language:hover{
+            color: $primary-color-text-header-1;
+        }
+    }
+    &__menu-mobile{
+        display: none;
+    }
+    &__logo-link{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-text{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        color: $primary-color-text;
+        font-family: 'Euclid Square Bold';
+        padding-left: 10px;
+    }
+}
