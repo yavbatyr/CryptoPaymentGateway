@@ -177,4 +177,41 @@
             }
         }
     }
+    &__form{
+        &-inner{
+            display: flex;
+            flex-direction: column;
+        }
+        &-name,
+        &-phone,
+        &-email{
+            width: 466px;
+            height: 58px;
+            border-bottom: 1px solid rgba($color: $primary-color, $alpha: 0.1);
+            display: flex;
+        }
+        input{
+            width: 100%;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &-btn{
+            color: $primary-color-text;
+            width: 225px;
+            height: 58px;
+            font-size: 24px;
+            line-height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(94.17deg, #E8C24F -53.08%, #DD475E 118.19%), radial-gradient(105.03% 92.27% at 97.99% 8.62%, #EB5323 0%, #811C5E 80.59%, #300947 100%);
+            box-shadow: inset -3px -3px 17px rgba(0, 0, 0, 0.25), inset 8px 2px 11px rgba(255, 255, 255, 0.16), inset -14.5651px 0px 18.2064px rgba(245, 178, 60, 0.2), inset 3px -3px 17px rgba(193, 62, 54, 0.45);
+            border-radius: 20px;
+            transition: 3s;
+            margin-top: 30px;
+        }
+        &-btn:hover{
+            background: linear-gradient(94.17deg, #e4dbc1 -53.08%, #DD475E 118.19%), radial-gradient(100.03% 92.27% at 97.99% 8.62%, #bd3005 0%, #cc4ea0 80.59%, #300947 100%);
+        }
+    }
 }
