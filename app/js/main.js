@@ -12,7 +12,7 @@ const swiper1 = new Swiper('.swiper', {
     momentumVelocityRatio: 2,
     momentum: true,
     loop: true,
-    speed: 8000,
+    speed: 10000,
     slidesPerView: 'auto',
     spaceBetween: 30,
 });
@@ -24,7 +24,7 @@ const swiper2 = new Swiper('.swiper-bottom ', {
       momentum: true,
     },
     loop: true,
-    speed: 7777,
+    speed: 10000,
     slidesPerView: 'auto',
     spaceBetween: 30,
 });

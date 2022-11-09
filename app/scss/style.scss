@@ -169,7 +169,7 @@
     }
 
     .swiper-slide:hover{
-        border: 1px solid #E8B24F;
+        border: 1px solid $primary-color-outline;
         border-radius: 20px;
     }
 }
@@ -181,6 +181,105 @@
         font-weight: 700;
         font-size: 32px;
         line-height: 41px;
+        margin-bottom: 100px;
+    }
+    &__tree{
+        position: relative;
+        &-branch,
+        &-branch-btn{
+            position: absolute;
+            border-radius: 28px;
+            font-size: 24px;
+            line-height: 30px;
+            padding: 16px 40px 18px;
+            margin: 5px 20px 5px 0;
+            border: 1px solid #433F49;
+            transition: .3s;
+            color: $primary-color-text;
+        }
+        &-branch-btn{
+            top: 303px; 
+            left: 1016px;
+            padding-right: 80px; //40 + 40
+        }
+        &-branch-btn span::before{
+            content: '';
+            position: absolute;
+            top: 21px;
+            right: 36px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(90deg);
+            background: url('../images/arrow→.svg') no-repeat; 
+        }
+        &-branch-btn:hover{
+            border: 1px solid $primary-color-outline;
+        }
+        &-branch{
+            border: 1px solid $primary-color-outline; //ПЕРЕКРЫВАЕТ ДРУГОЙ ЦВЕТ
+            white-space: nowrap;
+            display: inline-block;
+        }
+        &-branch:first-child{
+            top: 249px;
+            left: 118px;
+        }
+        &-branch:nth-child(2){
+            top: -71px;
+            left: 295px;
+        }
+        &-branch:nth-child(3){
+            top: -8px;
+            left: 601px;
+        }
+        &-branch:nth-child(4){
+            top: 148px;
+            left: 793px;
+        }
+        &-img{
+            display: flex;
+            justify-content: center;
+            padding-left: 50px;
+        }
+        &-img img{
+            max-width: 837px;
+            width: 100%;
+        }
+    }
+    &__info{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        padding: 22px 36px 26px;
+        border-radius: 32px;
+        border: 1px solid #DD475E;
+        border-image: linear-gradient(#DD475E , #6D1576); 
+        border-image-slice: 1; 
+        margin-bottom: 120px;
+        &-text{
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 150%;
+            max-width: 600px;
+        }
+        &-text span{
+            color: $primary-color-outline;
+        }
+        &-text::before{
+            content: '';
+            position: absolute;
+            top: 54px;
+            left: 661px;
+            width: 30px;
+            height: 30px;
+            background: url('../images/arrow→.svg') no-repeat;
+        }
+        &-coins{
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 150%;
+            color: $primary-color-grey-text;
+        }
     }
 }
 .footer{
