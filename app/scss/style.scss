@@ -289,6 +289,51 @@
         }
     }
 }
+.wallets{
+    &__title{
+        margin-bottom: 40px;
+    }
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-grow: 2;
+    }
+    &__item{
+        &-inner{
+            width: 140px;
+            text-align: center;
+            flex-basis: 16.6666667%;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        width: 140px;
+        height: 140px;
+        border: 1px solid #433F49;
+        border-radius: 56px;      
+        align-items: center;
+        display: flex;
+        transition: .3s;
+    }
+    &__item:hover{
+        border: 1px solid $primary-color-outline;
+    }
+    &__item img{
+        margin-left: auto; //
+        margin-right: auto;//           центр по ширине
+        display: flex;     //
+    }
+    &__name{
+        font-size: 20px;
+        line-height: 25px;
+        margin-top: 12px;
+        max-width: 140px;
+        overflow: hidden; /* Обрезаем всё за пределами блока */
+        text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+}
 .footer{
     background-color: #fff;
     color: $primary-color;
