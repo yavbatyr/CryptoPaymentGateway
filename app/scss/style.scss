@@ -175,7 +175,12 @@
     }
 }
 .advantages{
-    background: url('../images/advantages-bg.png') no-repeat;
+    position: relative;
+    &__bg{
+        position: absolute;
+        top: -43px;
+        right: -242px;
+    }
     &__title{
         margin-bottom: 30px;
     }
