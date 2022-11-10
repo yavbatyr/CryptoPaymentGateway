@@ -152,9 +152,10 @@
     .swiper-bottom{
         margin-bottom: 140px;
     }
-    .swiper-wrapper{
-        display: flex;
-    }
+    .swiper-wrapper {
+        -webkit-transition-timing-function: linear !important;
+                transition-timing-function: linear !important;
+      } 
     .swiper-slide{        
         border: 1px solid #433F49;
         border-radius: 20px;
@@ -174,6 +175,7 @@
     }
 }
 .advantages{
+    background: url('../images/advantages-bg.png') no-repeat;
     &__title{
         margin-bottom: 30px;
     }
