@@ -25,7 +25,20 @@ body{
     
 }
 
-
+.branch{
+    position: absolute;
+    border-radius: 28px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 16px 40px 18px;
+    margin: 5px 20px 5px 0;
+    border: 1px solid #433F49;
+    transition: .3s;
+    color: $primary-color-text;
+    top: 303px; 
+    left: 1016px;
+    padding-right: 80px; //40 + 40
+}
 
 .border-gradient{
         display: flex;
