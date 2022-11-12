@@ -294,19 +294,15 @@
         margin-bottom: 40px;
     }
     &__items{
-        display: flex;
+        display: inline-flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        flex-grow: 2;
+        column-gap: 104px;
+        
     }
     &__item{
         &-inner{
             width: 140px;
             text-align: center;
-            flex-basis: 16.6666667%;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
             margin-bottom: 30px;
         }
         width: 140px;
