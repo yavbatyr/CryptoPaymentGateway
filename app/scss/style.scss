@@ -254,15 +254,6 @@
         }
     }
     &__info{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        padding: 22px 36px 26px;
-        border-radius: 32px;
-        border: 1px solid #DD475E;
-        border-image: linear-gradient(#DD475E , #6D1576); 
-        border-image-slice: 1; 
-        margin-bottom: 120px;
         &-text{
             font-weight: 700;
             font-size: 22px;
@@ -328,6 +319,34 @@
         max-width: 140px;
         overflow: hidden; /* Обрезаем всё за пределами блока */
         text-overflow: ellipsis; /* Добавляем многоточие */
+    }
+    &__info{
+        position: relative;
+    }
+    &__info{
+
+    }
+    &__info-connect{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+    }
+    &__info-text{
+        max-width: 1056px;
+        font-size: 20px;
+        line-height: 130%;
+        color: $primary-color-grey-text;
+    }
+    &__info-text::before{
+        content: '';
+        position: absolute;
+        top: 54px;
+        left: 203px;
+        width: 30px;
+        height: 30px;
+        background: url('../images/arrow→.svg') no-repeat;
     }
 }
 .footer{
