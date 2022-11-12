@@ -35,9 +35,10 @@ body{
     border: 1px solid #433F49;
     transition: .3s;
     color: $primary-color-text;
-    top: 303px; 
-    left: 1016px;
     padding-right: 80px; //40 + 40
+}
+.branch:hover{
+    border: 1px solid $primary-color-outline;
 }
 
 .border-gradient{
@@ -59,4 +60,11 @@ body{
             linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
+}
+
+.grey-text{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: $primary-color-grey-text;
 }

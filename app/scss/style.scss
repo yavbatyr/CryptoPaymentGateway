@@ -190,22 +190,9 @@
     }
     &__tree{
         position: relative;
-        &-branch,
-        &-branch-btn{
-            position: absolute;
-            border-radius: 28px;
-            font-size: 24px;
-            line-height: 30px;
-            padding: 16px 40px 18px;
-            margin: 5px 20px 5px 0;
-            border: 1px solid #433F49;
-            transition: .3s;
-            color: $primary-color-text;
-        }
         &-branch-btn{
             top: 303px; 
             left: 1016px;
-            padding-right: 80px; //40 + 40
         }
         &-branch-btn span::before{
             content: '';
@@ -276,6 +263,160 @@
             line-height: 150%;
             color: $primary-color-grey-text;
         }
+    }
+}
+.hedging{
+    margin-bottom: 120px;
+    &__title{
+        margin-bottom: 70px; //40+30
+    }
+    &__tree{
+        position: relative;
+        &-inner{
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            margin-bottom: 60px;
+        }
+        &-branch{
+            cursor: pointer;
+        }
+        &-branch span::before{
+            content: '';
+            position: absolute;
+            width: 28px;
+            height: 28px;
+            top: 16.5px;
+            left: 25px;
+        }
+        &-branch:first-child{
+            top: -33px;
+            left: -195px;
+            padding: 16px 30px 18px 60px;
+        }
+        &-branch:first-child span::before{
+            background: url('../images/ethereum.svg') no-repeat;
+        }
+        &-branch:nth-child(2){
+            top: 35px;
+            left: 88px;
+            padding: 16px 30px 18px 60px;
+        }
+        &-branch:nth-child(2) span::before{
+            background: url('../images/bnb.svg') no-repeat;
+        }
+        &-branch:nth-child(3){
+            top: 119px;
+            left: -96px;
+            padding: 16px 30px 18px 60px;
+        }
+        &-branch:nth-child(3) span::before{
+            background: url('../images/doge.svg') no-repeat;
+        }
+        &-branch:nth-child(4){
+            top: 218px;
+            left: -161px;
+            padding: 16px 30px 18px 60px;
+        }
+        &-branch:nth-child(4) span::before{
+            background: url('../images/bitcoin.svg') no-repeat; //позиция отлечается от остальных иконок
+            top: 18.5px;
+            left: 30px;
+        }
+        &-branch:nth-child(5){
+            top: 303px;
+            left: 111px;
+            padding: 16px 30px 18px 40px;
+        }
+        &-info{
+            margin-top: 20px;
+            &-inner{
+            }
+            max-width: 505px;
+            margin-bottom: 8px;
+        }
+        &-info-title{
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 41px;
+            display: flex;
+            align-items: center;
+            padding-right: 75px;
+        }
+        &-info-title::before{
+            content: '';
+            position: absolute;
+            top: 128px;
+            left: 270px;
+            width: 30px;
+            height: 30px;
+            background: url('../images/arrow→.svg') no-repeat;
+        }
+        &-info-coins{}
+        &-info-coin{
+            cursor: pointer;
+            padding: 16px 30px 18px 60px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+        &-info-coin::before{                                    //первая монета
+            content: '';
+            position: absolute;
+            top: 17px;
+            left: 28px;
+            width: 28px;
+            height: 28px;
+            background: url('../images/usdt.svg') no-repeat;
+        }
+        &-info-coin:nth-child(2)::before{                       //вторая монета
+            background: url('../images/busd.svg') no-repeat;
+        }
+        &-info-coin:nth-child(3)::before{                       //третья монета
+            background: url('../images/usdc.svg') no-repeat;
+        }
+
+    }
+    &__text{
+        max-width: 505px;
+    }
+    &__items{
+        display: flex;
+        position: relative;
+    }
+    &__item{
+        margin-bottom: 0;
+    }
+    &__item-text{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        max-width: 505px;
+        margin-right: 20px;
+
+    }
+    &__item-text b{
+        color: $primary-color-outline;
+    }
+    &__item-title::before{
+        content: '';
+        position: absolute;
+        top: 64px;
+        left: 202px;
+        width: 30px;
+        height: 30px;
+        background: url('../images/arrow→.svg') no-repeat;
+    }
+    &__item-title{
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 150%;
+        padding-right: 75px;
+    }
+    &__item-coins{
+        display: flex;
+        align-items: center;
     }
 }
 .wallets{
