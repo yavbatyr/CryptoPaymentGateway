@@ -147,16 +147,18 @@
 .difference{
     margin-bottom: 110px;
     position: relative;
+    scroll-behavior: smooth;
     &__title{
 
     }
     //
     &__wrapper{
+    }
+    &__wrapper-hidden{
         height: 500px;
         overflow: hidden;
-
     }
-    &__wrapper::before{
+    &__wrapper-hidden::before{
         content: '';
         position: absolute;
         width: 100%;
@@ -234,10 +236,14 @@
         padding: 35px 20px 35px 20px;
     }
     &__open-btn{
+        display: none;
+    }
+    &__btn{
+        display: block;
         bottom: -57px;
         right: 579px;
     }
-    &__open-btn::before{
+    &__btn::before{
         content: '';
         position: absolute;
         top: 21px;
