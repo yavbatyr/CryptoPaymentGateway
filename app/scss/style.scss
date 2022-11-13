@@ -150,33 +150,48 @@
     }
     //
     &__wrapper{
-        
+
     }
     &__wrapper-names{
-        
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: #262429;
+        justify-content: end;
     }
-    &__names{
-        
+    &__name{
+        padding-right: 100px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: 0.06em;
+    }
+    &__name:last-child{
+        padding-right: 63px;
     }
     //
     &__items{
-        
+
     }
     &__points{
-        
+
     }
     &__point{
-        
+
     }
     //
     &__cards{
-        
+
     }
     &__card{
-        
+
     }
     &__benefit{
-        
+
+    }
+    .first-column{
+        color: $primary-color-outline;
     }
 }
 .features{
