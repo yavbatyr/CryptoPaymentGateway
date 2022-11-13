@@ -159,6 +159,7 @@
         align-items: center;
         background: #262429;
         justify-content: end;
+        margin-bottom: 25px;
     }
     &__name{
         padding-right: 100px;
@@ -173,7 +174,7 @@
     //
     &__items{
         display: flex;
-
+        justify-content: space-between;
     }
     &__points{
         max-width: 300px;
@@ -191,13 +192,29 @@
     }
     //
     &__cards{
-
+        min-width: 883px;
     }
     &__card{
-
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #433F49;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+    &__card:last-child{
+        margin-bottom: 0;
     }
     &__benefit{
-
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        line-height: 23px;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        width: 260px;
+        min-height: 80px;
+        padding: 35px 20px 35px 20px;
     }
     .first-column{
         color: $primary-color-outline;
