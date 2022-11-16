@@ -618,11 +618,18 @@
         }
         &-list{
             margin-left: 24px;
+            margin-bottom: 25px;
         }
         &-list-item{
             font-size: 20px;
             line-height: 130%;
             margin-bottom: 24px;
+        }
+        &-btn{
+            position: relative;
+            display: inline-block;
+            margin-bottom: 50px;
+            cursor: pointer;
         }
         &-btn span::before{
             content: '';
@@ -633,6 +640,27 @@
             height: 30px;
             transform: rotate(90deg);
             background: url('../images/arrow→.svg') no-repeat;
+        }
+        &-dropdown-list{
+            overflow: hidden;
+            padding-left: 58px;
+            max-height: 0;
+            transition: .3s;
+        }
+        &-dropdown-list_active{
+            max-height: 100%;
+        }
+        &-dropdown-list-item{
+            position: relative;
+        }
+        &-dropdown-list-item::before{
+            content: '';
+            top: 11px;
+            left: -55px;
+            position: absolute;
+            width: 27px;
+            height: 7px;
+            background-color: $primary-color-outline;
         }
 
         &-img{
@@ -649,6 +677,9 @@
     margin-bottom: 160px;
     position: relative;
     &__title span{
+        display: block;
+    }
+    &__title-span{
         padding-left: 200px;
     }
     &__content {
