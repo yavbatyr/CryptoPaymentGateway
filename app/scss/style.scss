@@ -678,7 +678,101 @@
         transform: rotate(230deg);
     }
 }
+.integration{
+    position: relative;
+    margin-bottom: 160px;
+    &__title{
 
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        margin-bottom: 40px;
+    }
+    &__scheme{
+        &-wrapper{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        &-wrapper:nth-child(1){
+            margin-bottom: 92px;
+            .integration__scheme-item:nth-child(1){
+                max-width: 236px;
+                margin-right: 92px;
+            }
+            //arrow
+            .integration__scheme-item:nth-child(1)::before{
+                content: '';
+                position: absolute;
+                top: 34px;
+                right: -63px;
+                width: 30px;
+                height: 30px;
+                transform: rotate(0deg);
+                background: url('../images/arrow→.svg') no-repeat;
+            }
+            .integration__scheme-item:nth-child(2){
+                max-width: 1072px;
+            }
+            //arrow
+            .integration__scheme-item:nth-child(2)::before{
+                content: '';
+                position: absolute;
+                bottom: -71px;
+                right: 336px;
+                width: 30px;
+                height: 30px;
+                transform: rotate(90deg);
+                background: url('../images/arrow→.svg') no-repeat;
+            }
+        }
+        &-wrapper:nth-child(2){
+            justify-content: end;
+            margin-bottom: 92px;
+            .integration__scheme-item{
+                max-width: 715px;
+            }
+            .integration__scheme-item::before{
+                content: '';
+                position: absolute;
+                bottom: -71px;
+                right: 336px;
+                width: 30px;
+                height: 30px;
+                transform: rotate(90deg);
+                background: url('../images/arrow→.svg') no-repeat;
+            }
+        }
+        &-item{
+            display: flex;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            padding: 16px 40px;
+            border: 1px solid $primary-color-outline;
+        }
+        &-btn{
+            margin: 0;
+            padding: 16px 40px;
+            background: linear-gradient(260.02deg, #E8C24F -22.37%, #DD475E 100%), radial-gradient(105.03% 92.27% at 97.99% 8.62%, #EB5323 0%, #811C5E 80.59%, #300947 100%);
+            &-wrapper{
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                padding-right: 308px;
+            }
+        }
+    }
+    &__bg{
+        position: absolute;
+        bottom: -555px;
+        left: -318px;
+        transform: rotate(300deg);
+        z-index: -1;
+    }
+}
 
 
 .footer{
