@@ -601,15 +601,44 @@
     }
 }
 .assurance{
+    margin-bottom: 160px;
     &__title{}
     &__content{
-        &-info{}
-        &-text{}
-        &-list{}
-        &-list-item{}
-        &-btn{}
+        display: flex;
+        justify-content: space-between;
+        &-info{
+            margin-right: 24px;
+            max-width: 750px;
+        }
+        &-text{
+            margin-bottom: 24px;
+        }
+        &-list{
+            margin-left: 24px;
+        }
+        &-list-item{
+            font-size: 20px;
+            line-height: 130%;
+            margin-bottom: 24px;
+        }
+        &-btn span::before{
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            width: 30px;
+            height: 30px;
+            transform: rotate(90deg);
+            background: url('../images/arrow→.svg') no-repeat;
+        }
 
-        &-img{}
+        &-img{
+            width: 584px;
+            height: 421px;
+        }
+        &-img img{
+            width: 100%;;
+        }
     }
 
 }
