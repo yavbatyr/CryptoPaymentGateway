@@ -99,7 +99,6 @@
         border: 2px solid #FFFFFF;
         border-radius: 20px;
         max-width: 417px;
-        height: 182px;
         margin: 19px 0 0 15px;
         &-title{
             font-weight: 700;
@@ -149,7 +148,7 @@
     position: relative;
     scroll-behavior: smooth;
     &__title{
-
+        text-transform:none;
     }
     //
     &__wrapper{
@@ -382,6 +381,7 @@
     margin-bottom: 120px;
     &__title{
         margin-bottom: 70px; //40+30
+        text-transform: none;
     }
     &__tree{
         position: relative;
@@ -534,6 +534,7 @@
 }
 .wallets{
     &__title{
+        text-transform: none;
     }
     &__items{
         display: inline-flex;
@@ -602,7 +603,9 @@
 }
 .assurance{
     margin-bottom: 160px;
-    &__title{}
+    &__title{
+        text-transform: none;
+    }
     &__content{
         display: flex;
         justify-content: space-between;
