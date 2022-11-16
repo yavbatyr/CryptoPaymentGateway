@@ -6,14 +6,12 @@ $(function(){
   $('.assurance__content-btn').on('click', function(){
     $('.assurance__content-dropdown-list').toggleClass('assurance__content-dropdown-list_active');
   });
+  $('.advantages__tree-branch-btn').on('click', function(){
+    $('.advantages__info-list').toggleClass('advantages__info-list_active');
+  });
 });
 
-const dropDown = document.querySelector('.assurance__content-btn');
 
-dropDown.addEventListener('click', (e) => {
-  e.preventDefault();
-  dropDown.nextElementSibling.classList.toggle('assurance__content-btn_active')
-});
 
 const swiper = new Swiper('.swiper', {
     autoplay: {

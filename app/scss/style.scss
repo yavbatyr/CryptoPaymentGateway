@@ -318,6 +318,7 @@
         }
         &-branch-btn:hover{
             border: 1px solid $primary-color-outline;
+            cursor: pointer;
         }
         &-branch{
             border: 1px solid $primary-color-outline; //ПЕРЕКРЫВАЕТ ДРУГОЙ ЦВЕТ
@@ -351,6 +352,7 @@
         }
     }
     &__info{
+        flex-wrap: wrap;
         &-text{
             font-weight: 700;
             font-size: 22px;
@@ -375,6 +377,31 @@
             line-height: 150%;
             color: $primary-color-grey-text;
         }
+        &-list{
+            overflow-x: hidden;
+            max-height: 0;
+            transition: .1s;
+            margin-top: -100px;
+            list-style-position: inside;
+            color: $primary-color-outline;
+        }
+        &-list span{
+            color: $primary-color-text;
+        }
+        &-list_active{
+            max-height: 100%;
+            margin-top: 40px;
+            overflow-x:visible;
+        }
+        &-list-item{
+            margin-bottom: 24px;
+            font-size: 22px;
+            line-height: 150%;
+        }
+        &-list-item:last-child{
+            margin-bottom: 0px;
+        }
+
     }
 }
 .hedging{
@@ -617,7 +644,7 @@
             margin-bottom: 24px;
         }
         &-list{
-            margin-left: 24px;
+            list-style-position: inside;
             margin-bottom: 25px;
         }
         &-list-item{
