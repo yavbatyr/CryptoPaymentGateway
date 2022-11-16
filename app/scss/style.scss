@@ -600,6 +600,20 @@
         background: url('../images/arrow→.svg') no-repeat;
     }
 }
+.assurance{
+    &__title{}
+    &__content{
+        &-info{}
+        &-text{}
+        &-list{}
+        &-list-item{}
+        &-btn{}
+
+        &-img{}
+    }
+
+}
+
 .footer{
     background-color: #fff;
     color: $primary-color;
