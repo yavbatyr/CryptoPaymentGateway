@@ -824,6 +824,7 @@
         top: 370px;
         right: -634px;
         transform: rotate(230deg);
+        z-index: -1;
     }
 }
 .integration{
@@ -1332,5 +1333,71 @@
     }
     .header__menu-mobile{
         display: flex;
+    }
+    .header-content__title {
+        font-size: 79px;
+    }
+    .header-content__button{
+        margin: 38px 0 30px 90px;
+    }
+    .difference{
+        display: none;
+    }
+    .advantages__info-text {
+        margin-bottom: 90px;
+        max-width: 356px;
+    }
+    .advantages__info-text::before {
+        top: 320px;
+        left: 190px;
+        transform: rotate(90deg);
+    }
+    .advantages__info-coins {
+        max-width: 319px;
+    }
+    .hedging{
+        display: none;
+    }
+    .wallets__info{
+        flex-direction: column;
+    }
+    .wallets__info-connect{
+        margin-bottom: 15px;
+    }
+    .wallets__info-text::before{
+        display: none;
+    }
+    .assurance__content{
+        flex-direction: column-reverse;
+    }
+    .assurance__content-img{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+    .support__content{
+        flex-direction: column-reverse;
+    }
+    .support__title-span{
+        padding-left: 0;
+    }
+    .support__content-list{
+        list-style-position: inside;
+        margin-bottom: 30px;
+    }
+    .support__content-img{
+        width: 100%;
+    }
+    .integration{
+        display: none;
+    }
+    .footer__info{
+        flex-direction: column-reverse;
+    }
+    .footer__form-inner{
+        margin-bottom: 30px;
+    }
+    .footer__info-social-items {
+        row-gap: 20px;
     }
 }
