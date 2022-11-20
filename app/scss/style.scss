@@ -925,45 +925,45 @@
     }
 }
 
-// @media (max-width: 1280px) {
-//     .difference__btn {
-//         right: 319px;
-//     }
-//     .advantages__tree-branch:nth-child(2) {
-//         left: 223px;
-//     }
-//     .advantages__tree-branch:nth-child(3) {
-//         left: 531px;
-//     }
-//     .advantages__tree-branch:nth-child(4) {
-//         left: 720px;
-//     }
-//     .advantages__tree-branch:first-child {
-//         left: 48px;
-//     }
-//     .advantages__tree-branch-btn {
-//         left: 945px;
-//     }
-//     .advantages__info-text {
-//         max-width: 550px;
-//     }
-//     .advantages__info-text::before {
-//         top: 82px;
-//         left: 597px;
-//     }
-//     .advantages__info-coins {
-//         max-width: 560px;
-//     }
-//     .wallets__items {
-//         column-gap: 80px;
-//     }
-//     .wallets__info-text {
-//         max-width: 937px;
-//     }
-//     .assurance__content-info {
-//         max-width: 625px;
-//     }
-// }
+@media (max-width: 1280px) {
+    .difference__btn {
+        right: 319px;
+    }
+    .advantages__tree-branch:nth-child(2) {
+        left: 223px;
+    }
+    .advantages__tree-branch:nth-child(3) {
+        left: 531px;
+    }
+    .advantages__tree-branch:nth-child(4) {
+        left: 720px;
+    }
+    .advantages__tree-branch:first-child {
+        left: 48px;
+    }
+    .advantages__tree-branch-btn {
+        left: 945px;
+    }
+    .advantages__info-text {
+        max-width: 550px;
+    }
+    .advantages__info-text::before {
+        top: 82px;
+        left: 597px;
+    }
+    .advantages__info-coins {
+        max-width: 560px;
+    }
+    .wallets__items {
+        column-gap: 80px;
+    }
+    .wallets__info-text {
+        max-width: 937px;
+    }
+    .assurance__content-info {
+        max-width: 625px;
+    }
+}
 
 // //tablets
 
