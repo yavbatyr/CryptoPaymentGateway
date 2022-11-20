@@ -264,11 +264,9 @@
     }
 }
 .features{
+    margin-bottom: 160px;
     &__title{
         text-align: center;
-    }
-    .swiper-bottom{
-        margin-bottom: 140px;
     }
     .swiper-wrapper {
         -webkit-transition-timing-function: linear !important;
@@ -293,6 +291,7 @@
     }
 }
 .advantages{
+    margin-bottom: 160px;
     position: relative;
     &__bg{
         position: absolute;
@@ -363,6 +362,7 @@
     }
     &__info{
         flex-wrap: wrap;
+        margin-bottom: 0;
         &-text{
             font-weight: 700;
             font-size: 22px;
@@ -570,6 +570,7 @@
     }
 }
 .wallets{
+    margin-bottom: 160px;
     &__title{
         text-transform: none;
     }
@@ -611,9 +612,7 @@
     }
     &__info{
         position: relative;
-    }
-    &__info{
-
+        margin-bottom: 0;
     }
     &__info-connect{
         display: flex;
@@ -1102,6 +1101,17 @@
 }
 
 @media (max-width: 834px) {
+    .integration,
+    .advantages,
+    .support,
+    .assurance,
+    .wallets,
+    .hedging,
+    .features,
+    .difference,
+    .header-content{
+        margin-bottom: 120px;
+    }
     .header__logo{
         padding-right: 35px;
     }
@@ -1193,4 +1203,42 @@
         flex-wrap: wrap;
         row-gap: 20px;
     }
+}
+
+@media (max-width: 820px ) and (min-width: 810px){
+    .wallets__items {
+        column-gap: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content__card{
+        display: none;
+    }
+    .difference__btn {
+        right: 246px;
+    }
+    .advantages__info-coins {
+        max-width: 260px;
+    }
+    .advantages__info-text {
+        max-width: 260px;
+    }
+    .advantages__info-text::before {
+        top: 180px;
+        left: 354px;
+    }
+    .hedging__item-title::before {
+        top: 193px;
+    }
+    .wallets__items {
+        column-gap: 56px;
+    }
+    .wallets__info-text {
+        max-width: 438px;
+    }
+    .assurance__content-info {
+        max-width: 341px;
+    }
+    
 }
