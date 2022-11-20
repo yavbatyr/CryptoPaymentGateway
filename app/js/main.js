@@ -1,4 +1,8 @@
 $(function(){
+  $('.header__menu-mobile').on('click', function () { 
+    $('.header__menu-burger').toggleClass('header__menu-burger_active');
+    $('.header__menu-list-mobile').toggleClass('header__menu-list-mobile_active');
+  });
   $('.difference__open-btn').on('click', function () { 
     $('.difference__wrapper').removeClass('difference__wrapper-hidden');
     $(this).removeClass('difference__btn');
