@@ -31,6 +31,10 @@
         &-link:hover{
             color: $primary-color-text-header-2;
         }
+        &-buttons-wrapper{
+            display: flex;
+            align-items: center;
+        }
         &-button{
             width: 75px;
             height: 35px;
@@ -87,6 +91,9 @@
         line-height: 118px;
         letter-spacing: 0.06em;
         text-align: right;
+        &-mobile{
+            display: none;
+        }
     }
     &__title:nth-child(2){
         padding-right: 111px;
@@ -968,12 +975,9 @@
 //tablets
 
 @media (max-width: 1024px) {
-<<<<<<< HEAD
     .header__logo-text{
         display: none;
     }
-=======
->>>>>>> f5297b8f0ebb0c7ee4b5c2dd8c3bc68339cfa304
     .difference__point{
         display: none;
     }
@@ -1094,5 +1098,99 @@
     }
     .assurance__content-info {
         max-width: 480px;
+    }
+}
+
+@media (max-width: 834px) {
+    .header__logo{
+        padding-right: 35px;
+    }
+    .header__menu-list {
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: start;
+        padding-right: 0;
+    }
+    .header-content__title:nth-child(2) {
+        padding-right: 0;
+    }
+    .header-content__title-desktop {
+        display: none;
+    }
+    .header-content__title-mobile {
+        display: block;
+    }
+    .difference__benefit{
+        min-width: 200px;
+        max-width: 200px;
+    }
+    .difference__btn {
+        right: 273px;
+    }
+    .advantages__tree{
+        display: none;
+    }
+    .advantages__info-text {
+        max-width: 320px;
+    }
+    .advantages__info-text::before {
+        top: 142px;
+        left: 396px;
+    }
+    .advantages__info-coins {
+        max-width: 300px;
+    }
+    .advantages__info-list{
+        max-height: 100%;
+        margin-top: 30px;
+    }
+    .hedging__tree{
+        display: none;
+    }
+    .hedging__tree-info-inner{
+        width: 100%;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: row ;
+        align-items: center;
+    }
+    .hedging__tree-inner {
+        justify-content: start;
+    }
+    .hedging__text{
+        text-align: right;
+    }
+    .hedging__items{
+        align-items: center;
+    }
+    .hedging__item-title::before {
+        top: 166px;
+    }
+    .hedging__item-coins {
+        min-width: 150px;
+    }
+    .wallets__items {
+        column-gap: 78px;
+    }
+    .wallets__info-text {
+        max-width: 482px;
+    }
+    .wallets__info-text::before {
+        top: 90px;
+    }
+    .assurance__content-info {
+        max-width: 401px;
+    }
+    .footer__form{
+        max-width: 400px;
+    }
+    .footer__info-text {
+        margin-bottom: 40px;
+        padding-right: 20px;
+    }
+    .footer__info-social-items{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
     }
 }
