@@ -965,128 +965,131 @@
     }
 }
 
-// //tablets
+//tablets
 
-// @media (max-width: 1024px) {
-//     .difference__point{
-//         display: none;
-//     }
-//     .difference__wrapper-names {
-//         justify-content: space-around;
-//     }
-//     .difference__name {
-//         padding-right: 0;
-//     }
-//     .difference__name:last-child {
-//         padding-right: 0;
-//     }
-//     .difference__card {
-//         width: 100%;
-//         padding: 0 25px;
-//     }
-//     .advantages__tree-img img {
-//         width: 80%;
-//     }
-//     .advantages__tree-branch:nth-child(2) {
-//         left: 126px;
-//     }
-//     .advantages__tree-branch:nth-child(3) {
-//         left: 407px;
-//         top: -15px;
-//     }
-//     .advantages__tree-branch:nth-child(4) {
-//         left: 596px;
-//         top: 123px;
-//     }
-//     .advantages__tree-branch:first-child {
-//         left: 5px;
-//         top: 213px;
-//     }
-//     .advantages__tree-branch-btn {
-//         top: 262px;
-//         left: 750px !important;
-//     }
-//     .advantages__info-text {
-//         max-width: 423px;
-//     }
-//     .advantages__info-text::before {
-//         top: 119px;
-//         left: 471px;
-//     }
-//     .advantages__info-coins {
-//         max-width: 414px;
-//     }
-//     .hedging__tree-img{
-//         margin-right: 108px;
-//     }
-//     .hedging__tree-img img{
-//         width: 450px;
-//         height: 426px;
-//     }
-//     .hedging__tree-info-inner{
-//         justify-content: end;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: end;
-//     }
-//     .hedging__tree-info {
-//         max-width: 303px;
-//         display: flex;
-//         flex-direction: column;
-//     }
-//     .hedging__tree-info-title {
-//         justify-content: center;
-//         margin-bottom: 50px;
-//         padding-right: 0;
-//     }
-//     .hedging__tree-info-title::before {
-//         transform: rotate(90deg);
-//         top: 74px;
-//         left: 134px;
-//     }
-//     .hedging__tree-info-coin {
-//         padding: 16px 30px 18px 100px;
-//         width: 100%;
-//     }
-//     .hedging__tree-info-coin::before {
-//         left: 62px;
-//     }
-//     .hedging__tree-branch:first-child {
-//         top: 32px;
-//     }
-//     .hedging__tree-branch:nth-child(2) {
-//         top: 91px;
-//         left: 50px;
-//     }
-//     .hedging__tree-branch:nth-child(3) {
-//         top: 161px;
-//         left: -105px;
-//     }
-//     .hedging__tree-branch:nth-child(4) {
-//         top: 244px;
-//         left: -161px;
-//     }
-//     .hedging__tree-branch:nth-child(5) {
-//         top: 317px;
-//         left: 68px;
-//     }
-//     .hedging__text {
-//         max-width: 400px;
-//         text-align: right;
-//     }
-//     .hedging__item-title::before {
-//         top: 102px;
-//     }
-//     .wallets__items {
-//         column-gap: 28px;
-//     }
-//     .wallets__info-text {
-//         max-width: 690px;
-//     }
-//     .wallets__info-text::before {
-//         top: 64px;
-//     }
-//     .assurance__content-info {
-//         max-width: 480px;
-//     }
-// }
+@media (max-width: 1024px) {
+    .header__logo-text{
+        display: none;
+    }
+    .difference__point{
+        display: none;
+    }
+    .difference__wrapper-names {
+        justify-content: space-around;
+    }
+    .difference__name {
+        padding-right: 0;
+    }
+    .difference__name:last-child {
+        padding-right: 0;
+    }
+    .difference__card {
+        width: 100%;
+        padding: 0 25px;
+    }
+    .advantages__tree-img img {
+        width: 80%;
+    }
+    .advantages__tree-branch:nth-child(2) {
+        left: 126px;
+    }
+    .advantages__tree-branch:nth-child(3) {
+        left: 407px;
+        top: -15px;
+    }
+    .advantages__tree-branch:nth-child(4) {
+        left: 596px;
+        top: 123px;
+    }
+    .advantages__tree-branch:first-child {
+        left: 5px;
+        top: 213px;
+    }
+    .advantages__tree-branch-btn {
+        top: 262px;
+        left: 750px !important;
+    }
+    .advantages__info-text {
+        max-width: 423px;
+    }
+    .advantages__info-text::before {
+        top: 119px;
+        left: 471px;
+    }
+    .advantages__info-coins {
+        max-width: 414px;
+    }
+    .hedging__tree-img{
+        margin-right: 108px;
+    }
+    .hedging__tree-img img{
+        width: 450px;
+        height: 426px;
+    }
+    .hedging__tree-info-inner{
+        justify-content: end;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+    .hedging__tree-info {
+        max-width: 303px;
+        display: flex;
+        flex-direction: column;
+    }
+    .hedging__tree-info-title {
+        justify-content: center;
+        margin-bottom: 50px;
+        padding-right: 0;
+    }
+    .hedging__tree-info-title::before {
+        transform: rotate(90deg);
+        top: 74px;
+        left: 134px;
+    }
+    .hedging__tree-info-coin {
+        padding: 16px 30px 18px 100px;
+        width: 100%;
+    }
+    .hedging__tree-info-coin::before {
+        left: 62px;
+    }
+    .hedging__tree-branch:first-child {
+        top: 32px;
+    }
+    .hedging__tree-branch:nth-child(2) {
+        top: 91px;
+        left: 50px;
+    }
+    .hedging__tree-branch:nth-child(3) {
+        top: 161px;
+        left: -105px;
+    }
+    .hedging__tree-branch:nth-child(4) {
+        top: 244px;
+        left: -161px;
+    }
+    .hedging__tree-branch:nth-child(5) {
+        top: 317px;
+        left: 68px;
+    }
+    .hedging__text {
+        max-width: 400px;
+        text-align: right;
+    }
+    .hedging__item-title::before {
+        top: 102px;
+    }
+    .wallets__items {
+        column-gap: 28px;
+    }
+    .wallets__info-text {
+        max-width: 690px;
+    }
+    .wallets__info-text::before {
+        top: 64px;
+    }
+    .assurance__content-info {
+        max-width: 480px;
+    }
+}
