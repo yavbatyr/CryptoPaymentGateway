@@ -1401,3 +1401,25 @@
         row-gap: 20px;
     }
 }
+
+
+
+@media (max-width: 414px) and (min-width: 390px) {
+    .header-content__title{
+        font-size: 60px;
+        line-height: 87px;
+    }
+    .advantages__info-text::before {
+        top: 351px;
+        left: 176px;
+    }
+    .assurance__content-btn{
+        width: 100%;
+    }
+    .wallets__items {
+        column-gap: 70px;
+    }
+    .title{
+        font-size: 48px;
+    }
+}
